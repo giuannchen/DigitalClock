@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DigitalClock.Interfaces
+﻿namespace DigitalClock.Interfaces
 {
     /// <summary>
     /// 抽出共同函式

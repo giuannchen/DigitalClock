@@ -19,7 +19,6 @@ namespace DigitalClock
             Form.CheckForIllegalCrossThreadCalls = false;
             Clock MyClock = new Clock();
             DigitalClock MyDigitalClock = new DigitalClock(textBox1);
-            // label1.Text= MyDigitalClock.update
             //訂閱
             MyClock.RegisterObserver(MyDigitalClock);
             // 每秒
