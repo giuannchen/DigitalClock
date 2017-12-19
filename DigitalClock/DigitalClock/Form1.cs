@@ -17,15 +17,23 @@ namespace DigitalClock
         {
             InitializeComponent();
             Form.CheckForIllegalCrossThreadCalls = false;
-            Clock MyClock = new Clock();
-            DigitalClock MyDigitalClock = new DigitalClock(textBox1);
-            //訂閱
-            MyClock.RegisterObserver(MyDigitalClock);
+            Clock<string> MyClock = new Clock<string>();
+            DigitalClock<string> MyDigitalClock = new DigitalClock<string>(MyClock);
+
+            //event method to
+            MyDigitalClock.Clock.DatetimePublisher += showtime;
+
+            void showtime(object sender, MessageArgument<string> e)
+            {
+                textBox1.Text = e.Message;
+            }
+
             // 每秒
             System.Timers.Timer tmr = new System.Timers.Timer(1000);
             tmr.Elapsed += delegate
             {
-                MyClock.onTick();
+                DateTime dt = DateTime.Now;
+                MyClock.onTick(dt.ToString("HH") + ":" + dt.ToString("mm") + ":" + dt.ToString("ss"));
             };
             tmr.Start();
         }

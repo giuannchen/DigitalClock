@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="Interfaces\IClock.cs" />
     <Compile Include="Interfaces\IDigitalClock.cs" />
+    <Compile Include="MessageArgument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

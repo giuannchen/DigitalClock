@@ -1,32 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DigitalClock.Clock">
+  <Class Name="DigitalClock.Clock&lt;T&gt;">
     <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAACAA=</HashCode>
       <FileName>Clock.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DigitalClock.DigitalClock">
-    <Position X="2.75" Y="2" Width="1.5" />
+  <Class Name="DigitalClock.DigitalClock&lt;T&gt;">
+    <Position X="5.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>DigitalClock.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="DigitalClock.Interfaces.IClock">
+  <Class Name="DigitalClock.MessageArgument&lt;T&gt;">
+    <Position X="2.5" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>MessageArgument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DigitalClock.Interfaces.IClock&lt;T&gt;">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAACAA=</HashCode>
       <FileName>Interfaces\IClock.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="DigitalClock.Interfaces.IDigitalClock">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Interface Name="DigitalClock.Interfaces.IDigitalClock&lt;T&gt;">
+    <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IDigitalClock.cs</FileName>
     </TypeIdentifier>
   </Interface>

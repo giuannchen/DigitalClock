@@ -3,8 +3,8 @@
     /// <summary>
     /// 抽出共同函式
     /// </summary>
-    public interface IDigitalClock
+    public interface IDigitalClock<T>
     {
-        void update(string hours, string minutes, string seconds);
+        // void update(string hours, string minutes, string seconds);
     }
 }

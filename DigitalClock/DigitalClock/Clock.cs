@@ -7,29 +7,22 @@ using System.Threading.Tasks;
 
 namespace DigitalClock
 {
-    internal class Clock : IClock
+    internal class Clock<T> : IClock<T>
     {
-        // 使用List來存放觀察者名單
-        private readonly List<IDigitalClock> lstObservers = new List<IDigitalClock>();
+        //Defined datapublisher event
+        public event EventHandler<MessageArgument<T>> DatetimePublisher;
 
-        public Clock()
+        public void OnDatetimePublisher(MessageArgument<T> args)
         {
-            lstObservers = new List<IDigitalClock>();
+            var handler = DatetimePublisher;
+            if (handler != null)
+                handler(this, args);
         }
 
-        public void onTick()
+        public void onTick(T data)
         {
-            foreach (IDigitalClock observer in lstObservers)
-            {
-                DateTime dt = DateTime.Now;
-                observer.update(dt.ToString("HH"), dt.ToString("mm"), dt.ToString("ss"));
-            }
-        }
-
-        // 加入觀察者
-        public void RegisterObserver(IDigitalClock pObserver)
-        {
-            lstObservers.Add(pObserver);
+            MessageArgument<T> message = (MessageArgument<T>)Activator.CreateInstance(typeof(MessageArgument<T>), new object[] { data });
+            OnDatetimePublisher(message);
         }
     }
 }

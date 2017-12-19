@@ -11,19 +11,13 @@ namespace DigitalClock
     /// <summary>
     /// 觀察者
     /// </summary>
-    internal class DigitalClock : IDigitalClock
+    internal class DigitalClock<T> : IDigitalClock<T>
     {
-        private TextBox clocktime;
-
-        public DigitalClock(TextBox display)
+        public DigitalClock(IClock<T> clock)
         {
-            clocktime = display;
+            Clock = clock;
         }
 
-        public void update(string hours, string minutes, string seconds)
-        {
-            clocktime.Text = hours + ":" + minutes + ":" + seconds;
-            // Console.WriteLine(hours + ":" + minutes + ":" + seconds);
-        }
+        public IClock<T> Clock { get; private set; }
     }
 }

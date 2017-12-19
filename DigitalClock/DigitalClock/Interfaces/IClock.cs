@@ -1,12 +1,17 @@
-﻿namespace DigitalClock.Interfaces
+﻿using System;
+
+namespace DigitalClock.Interfaces
 {
     /// <summary>
     /// 抽出共同函式
     /// </summary>
-    public interface IClock
+    public interface IClock<T>
     {
-        void onTick();
+        //發佈時間的主題
+        event EventHandler<MessageArgument<T>> DatetimePublisher;
 
-        void RegisterObserver(IDigitalClock pObserver);
+        void OnDatetimePublisher(MessageArgument<T> args);
+
+        void onTick(T data);
     }
 }
