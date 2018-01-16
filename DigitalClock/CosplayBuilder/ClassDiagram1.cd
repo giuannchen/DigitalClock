@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CosplayBuilder.Aabstract.Armor">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Abstract\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Aabstract.Arms">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Arms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Aabstract.Boots">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Boots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Aabstract.Hat">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Abstract\Hat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Aabstract.Helmet">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Helmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.PokemonArmor" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Pokemon\PokemonArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.PokemonArms" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemon\PokemonArms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.PokemonBoots" Collapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemon\PokemonBoots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.PokemonHat" Collapsed="true">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Pokemon\PokemonHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.PokemonHelmet" Collapsed="true">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemon\PokemonHelmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.WarArmor" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>War\WarArmor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.WarArms" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>War\WarArms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.WarBoots" Collapsed="true">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>War\WarBoots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.WarHat" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>War\WarHat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CosplayBuilder.Pokemon.WarHelmet" Collapsed="true">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>War\WarHelmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CosplayBuilder.Interfaces.IAbstractFactory">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAQAAAAAAAI=</HashCode>
+      <FileName>Interfaces\IAbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="微軟正黑體" Size="9" />
+</ClassDiagram>
