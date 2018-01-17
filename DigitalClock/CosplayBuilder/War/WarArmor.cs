@@ -13,12 +13,12 @@ namespace CosplayBuilder.Pokemon
     internal class WarArmor : Armor
     {
         /// <summary>
-        /// 製造頭盔
+        /// 製造盔甲
         /// </summary>
         /// <returns>回傳頭盔訊息</returns>
         public override string MakeArmor()
         {
-            return "魔獸頭盔";
+            return "魔獸盔甲";
         }
     }
 }
