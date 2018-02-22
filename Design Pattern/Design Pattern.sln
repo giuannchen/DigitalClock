@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderDiscount", "OrderDisco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paint", "Paint\Paint.csproj", "{B83837E3-D988-4393-B104-8CDC716CD824}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsValidPersonalId", "IsValidPersonalId\IsValidPersonalId.csproj", "{0973D7C5-74A1-4299-9126-1D7B61E16524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B83837E3-D988-4393-B104-8CDC716CD824}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B83837E3-D988-4393-B104-8CDC716CD824}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B83837E3-D988-4393-B104-8CDC716CD824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0973D7C5-74A1-4299-9126-1D7B61E16524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0973D7C5-74A1-4299-9126-1D7B61E16524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0973D7C5-74A1-4299-9126-1D7B61E16524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0973D7C5-74A1-4299-9126-1D7B61E16524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
