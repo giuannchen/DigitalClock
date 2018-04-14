@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OrderDiscount3.Member">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAIAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderDiscount3.MemberService">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAIAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MemberService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OrderDiscount3.OrderProxy">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAFIAAAAAAgAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>OrderProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderService" />
+      <Property Name="MemberService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OrderDiscount3.OrderService">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAAAQAAAAACAAAAAAA=</HashCode>
+      <FileName>OrderService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PriceComponent1" />
+      <Property Name="PriceDecorator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OrderDiscount3.PriceComponent">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PriceComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderDiscount3.PriceDecorator">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAACAAAAAAA=</HashCode>
+      <FileName>PriceDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderDiscount3.Form1" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAABAAAADAAAACAAAIwAAAACDgAAACAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderProxy" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="微軟正黑體" Size="9" />
+</ClassDiagram>

@@ -7,14 +7,14 @@ namespace OrderDiscount
     public partial class Form1 : Form
     {
         // 我的計算機
-        private OrderService myOrderService;
+        private OrderService MyOrderService;
 
      
 
         public Form1()
         {
             InitializeComponent();
-            this.myOrderService = new OrderService();
+            this.MyOrderService = new OrderService();
         }
 
         public OrderService OrderService
@@ -25,20 +25,20 @@ namespace OrderDiscount
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {          
             if (this.radioCard1.Checked)
             {
-                this.listBox1.Items.Add(this.myOrderService.GetPrice("A",Convert.ToDouble(this.textBox1.Text)).ToString());              
+                this.listBox1.Items.Add(this.MyOrderService.GetPrice("A",Convert.ToDouble(this.textBox1.Text)).ToString());              
             }
             else if (this.radioCard2.Checked)
             {
-                this.listBox1.Items.Add(this.myOrderService.GetPrice("B", Convert.ToDouble(this.textBox1.Text)).ToString());
+                this.listBox1.Items.Add(this.MyOrderService.GetPrice("B", Convert.ToDouble(this.textBox1.Text)).ToString());
 
             }
             else if (this.radioCard3.Checked)
             {
-                this.listBox1.Items.Add(this.myOrderService.GetPrice("C", Convert.ToDouble(this.textBox1.Text)).ToString());
+                this.listBox1.Items.Add(this.MyOrderService.GetPrice("C", Convert.ToDouble(this.textBox1.Text)).ToString());
 
             }
         }

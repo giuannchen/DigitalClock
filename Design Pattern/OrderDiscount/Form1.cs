@@ -14,18 +14,18 @@ namespace OrderDiscount
     public partial class Form1 : Form
     {
         // 我的計算機
-        private Calculate myCalculate;
+        private Calculate MyCalculate;
 
         //滿額送
-        private Full myFull;
+        private Full MyFull;
 
         // 打折
-        private Off myOff;
+        private Off MyOff;
 
         public Form1()
         {
             InitializeComponent();
-            myCalculate = new Calculate();
+            this.MyCalculate = new Calculate();
         }
 
         public Interfaces.IIDiscount IIDiscount
@@ -36,19 +36,19 @@ namespace OrderDiscount
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             //折扣後
             double afterCalculate;
-            if (radioFull.Checked)
+            if (this.radioFull.Checked)
             {
-                afterCalculate = myCalculate.DoCalculate(new Full(), Convert.ToDouble(textBox1.Text));
-                listBox1.Items.Add("購買金額:" + textBox1.Text + " 滿千送百後的價格:" + afterCalculate.ToString());
+                afterCalculate = this.MyCalculate.DoCalculate(new Full(), Convert.ToDouble(this.textBox1.Text));
+                this.listBox1.Items.Add("購買金額:" + this.textBox1.Text + " 滿千送百後的價格:" + afterCalculate.ToString());
             }
-            else if (radioOff.Checked)
+            else if (this.radioOff.Checked)
             {
-                afterCalculate = myCalculate.DoCalculate(new Off(), Convert.ToDouble(textBox1.Text));
-                listBox1.Items.Add("購買金額:" + textBox1.Text + " 八折後後的價格:" + afterCalculate.ToString());
+                afterCalculate = this.MyCalculate.DoCalculate(new Off(), Convert.ToDouble(this.textBox1.Text));
+                this.listBox1.Items.Add("購買金額:" + this.textBox1.Text + " 八折後後的價格:" + afterCalculate.ToString());
             }
         }
     }
